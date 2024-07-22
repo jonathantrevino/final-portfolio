@@ -4,6 +4,7 @@ import "./globals.css";
 import Nav from "./components/nav";
 import Footer from "./components/footer";
 import { Toaster } from "react-hot-toast";
+import GoogleAnalytics from "./components/GoogleAnalytics";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,6 +35,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="light">
+      <GoogleAnalytics />
       <body className={`${inter.className}`}>
         <div>
           <Toaster />

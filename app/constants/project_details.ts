@@ -30,7 +30,7 @@ export type ProjectType = {
   description: string;
   skills: string[];
   img_url: string;
-  url: string;
+  url: string | null;
   index: number;
   github_url: string;
   overview: string;
@@ -88,7 +88,7 @@ export const projects: ProjectType[] = [
       "AWS - Lambda",
     ],
     img_url: "/linkfolio.png",
-    url: "https://linkfolio-nu.vercel.app/",
+    url: null,
     index: 0,
     github_url: "https://github.com/jonathan-trevino/linkfolio",
     overview:

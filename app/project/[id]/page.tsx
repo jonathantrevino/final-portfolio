@@ -77,14 +77,16 @@ export default function Page({ params: { id } }: Params) {
               ))}
             </div>
             <div className="flex gap-3">
-              <a
-                href={projectData.url}
-                target="_blank"
-                className="btn btn-primary btn-sm"
-              >
-                <ExternalLink size={16} />
-                View Live
-              </a>
+              {projectData.url && (
+                <a
+                  href={projectData.url}
+                  target="_blank"
+                  className="btn btn-primary btn-sm"
+                >
+                  <ExternalLink size={16} />
+                  View Live
+                </a>
+              )}
               <a
                 href={projectData.github_url}
                 target="_blank"

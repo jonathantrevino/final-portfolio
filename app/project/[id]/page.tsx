@@ -59,7 +59,7 @@ export default function Page({ params: { id } }: Params) {
     );
   return (
     <>
-      <section className="flex lg:flex-row flex-col-reverse gap-5 px-[40px] mt-[74px] max-w-[1440px] mx-auto min-h-screen">
+      <section className="flex lg:flex-row flex-col-reverse gap-5 px-[40px] mt-[74px] max-w-[1440px] mx-auto">
         <div className="flex-[0.5] space-y-5">
           <div className="space-y-3 mb-[44px]">
             <div>

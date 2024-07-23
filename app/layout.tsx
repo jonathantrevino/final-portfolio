@@ -5,6 +5,7 @@ import Nav from "./components/nav";
 import Footer from "./components/footer";
 import { Toaster } from "react-hot-toast";
 import GoogleAnalytics from "./components/GoogleAnalytics";
+import Script from "next/script";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -35,7 +36,20 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" data-theme="light">
-      <GoogleAnalytics />
+      <Script
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-VZ3WJTM4TG"
+      ></Script>
+      <Script id="google-analytic">
+        {`
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-VZ3WJTM4TG');
+
+`}
+      </Script>
       <body className={`${inter.className}`}>
         <div>
           <Toaster />

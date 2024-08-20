@@ -113,14 +113,14 @@ const Nav = () => {
         <div className="flex gap-5">
           <Link href="/#projects" className="flex gap-2 group">
             <Folders
-              className="group-hover:-translate-y-[2px] transition-all"
+              className="group-hover:-translate-y-[2px] transition-all ease-in-out"
               size={20}
             />
             Projects
           </Link>
           <Link href="/#skills" className="flex gap-2 group">
             <Layers3
-              className="group-hover:-translate-y-[2px] transition-all"
+              className="group-hover:-translate-y-[2px] transition-all ease-in-out"
               size={20}
             />
             Skills

@@ -1,5 +1,14 @@
 "use client";
-import { Book, Folder, Folders, Layers3, Mail, Menu } from "lucide-react";
+import {
+  Award,
+  Book,
+  Folder,
+  Folders,
+  GraduationCap,
+  Layers3,
+  Mail,
+  Menu,
+} from "lucide-react";
 import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 import Image from "next/image";
@@ -118,6 +127,21 @@ const Nav = () => {
             />
             Projects
           </Link>
+          <Link href="/#education" className="flex gap-2 group">
+            <GraduationCap
+              className="group-hover:-translate-y-[2px] transition-all ease-in-out"
+              size={20}
+            />
+            Skills
+          </Link>
+          <Link href="/#certifications" className="flex gap-2 group">
+            <Award
+              className="group-hover:-translate-y-[2px] transition-all ease-in-out"
+              size={20}
+            />
+            Certifications
+          </Link>
+
           <Link href="/#skills" className="flex gap-2 group">
             <Layers3
               className="group-hover:-translate-y-[2px] transition-all ease-in-out"
@@ -150,11 +174,11 @@ const Nav = () => {
               animate="animate"
               exit="exit"
               variants={mobileMenuVariants}
-              className="flex flex-col gap-5 absolute right-0 z-20 bg-white  p-5 rounded-[8px] top-10 border border-[color:#E6E6E7] origin-top-right drop-shadow-sm w-[150px]"
+              className="flex flex-col gap-5 absolute right-0 z-20 bg-white  p-5 rounded-[8px] top-10 border border-[color:#E6E6E7] origin-top-right drop-shadow-sm w-[180px]"
             >
               <Link
                 className="group flex items-center gap-2"
-                href="#projects"
+                href="/#projects"
                 onClick={() => setOpen(!open)}
               >
                 <Folder
@@ -163,10 +187,32 @@ const Nav = () => {
                 />
                 <p>Projects</p>
               </Link>
+              <Link
+                className="group flex items-center gap-2"
+                href="/#education"
+                onClick={() => setOpen(!open)}
+              >
+                <GraduationCap
+                  className="group-hover:-translate-y-1 transition-all"
+                  size={16}
+                />
+                <p>Education</p>
+              </Link>
+              <Link
+                className="group flex items-center gap-2"
+                href="/#certifications"
+                onClick={() => setOpen(!open)}
+              >
+                <Award
+                  className="group-hover:-translate-y-1 transition-all"
+                  size={16}
+                />
+                <p>Certifications</p>
+              </Link>
 
               <Link
                 className="group flex items-center gap-2"
-                href="#skills"
+                href="/#skills"
                 onClick={() => setOpen(!open)}
               >
                 <Layers3
@@ -174,18 +220,6 @@ const Nav = () => {
                   size={16}
                 />
                 <p>Skills</p>
-              </Link>
-
-              <Link
-                className="group flex items-center gap-2"
-                href="#connect"
-                onClick={() => setOpen(!open)}
-              >
-                <Mail
-                  className="group-hover:-translate-y-1 transition-all"
-                  size={16}
-                />
-                <p>Connect</p>
               </Link>
             </motion.span>
           )}

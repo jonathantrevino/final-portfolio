@@ -1,10 +1,10 @@
 export const skills_images = [
+  { url: "/typescript.svg", title: "TypeScript" },
   { url: "/javascript.svg", title: "JavaScript" },
   { url: "/react.svg", title: "React" },
   { url: "/next.svg", title: "Next" },
   { url: "/tailwind.svg", title: "Tailwind" },
   { url: "/firebase.svg", title: "Firebase" },
-  { url: "/typescript.svg", title: "TypeScript" },
   { url: "/express.svg", title: "Express" },
   { url: "/node.svg", title: "Node" },
   { url: "/aws.svg", title: "Aws" },
@@ -12,7 +12,6 @@ export const skills_images = [
   { url: "/mongo.svg", title: "Mongo" },
   { url: "/java.svg", title: "Java" },
   { url: "/c.svg", title: "C" },
-  { url: "/csharp.svg", title: "C#" },
   { url: "/python.svg", title: "Python" },
 ];
 

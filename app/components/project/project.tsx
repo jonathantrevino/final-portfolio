@@ -33,7 +33,9 @@ const Project = ({
             <h3 className="text-[19px]">{title}</h3>
             <div className="badge badge-outline badge-primary">Web App</div>
           </div>
-          <p className="text-[14px] leading-relaxed">{description}</p>
+          <p className="text-[14px] leading-relaxed text-gray-700">
+            {description}
+          </p>
         </span>
         <div className="flex flex-wrap gap-2 min-h-[44px]">
           {skills.map((skill, index) => (

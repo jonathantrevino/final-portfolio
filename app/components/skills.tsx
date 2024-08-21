@@ -14,7 +14,7 @@ const Skills = () => {
             key={index}
             initial={{ scale: 0.8 }}
             whileInView={{ scale: 1, opacity: 1 }}
-            transition={{ delay: 0.1 * (index * 0.1), duration: 0.2 }}
+            transition={{ delay: 0.1 * (index * 0.2), duration: 0.2 }}
             className="sm:w-full sm:h-full w-[100px] h-[100px] aspect-square group relative bg-base-200 hover:scale-105 transition-all"
           >
             <Image

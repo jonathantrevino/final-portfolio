@@ -8,3 +8,8 @@
 body {
   overflow-x: hidden;
 }
+
+a.custom {
+  cursor: url("/utsa.png"), auto;
+  font-weight: 500;
+}

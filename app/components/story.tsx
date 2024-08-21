@@ -48,7 +48,7 @@ const Story = () => {
           className="flex-[0.4] flex justify-end"
         >
           <Image
-            className="shadow-sm"
+            className="shadow-lg"
             src={"/dark-code.png"}
             width={380}
             height={418}
@@ -56,14 +56,14 @@ const Story = () => {
           />
         </motion.div>
       </div>
-      <div className="flex lg:flex-row-reverse flex-col gap-5  mt-[80px]">
+      <div className="flex lg:flex-row-reverse flex-col gap-5  mt-[40px]">
         <div className="space-y-5 flex-[0.6] text-end flex flex-col justify-end">
           <h3 className="text-[23px] font-medium">Cloud Expertise</h3>
           <div className="flex justify-end">
             <p className="max-w-[544px]">
-              From my experience building web apps, I am more than familiar with
-              the importance of efficiently configuring the cloud platform that
-              your service is hosted on.{" "}
+              My experience with the cloud has been very hands on. My expertise
+              spans from designing and implementing cloud architecture to
+              deploying and maintaining applications in AWS.
             </p>
           </div>
           <ul className="space-y-[10px] self-end flex items-end flex-col">

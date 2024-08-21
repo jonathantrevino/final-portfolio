@@ -100,7 +100,7 @@ const Footer = () => {
             Any questions, proposals, or collaborations? Feel free to reach out.
           </p>
           <button
-            className="group flex gap-2 text-primary hover:text-primary text-primary/80"
+            className="group flex gap-2 text-primary hover:text-primary text-primary/80 active:scale-95 transition-all ease-out"
             onClick={copyEmailToClipBoard}
           >
             <Copy className="group-hover:scale-[1.05] transition-all ease-in-out" />

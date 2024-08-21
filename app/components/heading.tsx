@@ -1,41 +1,40 @@
 "use client";
 import React from "react";
 import Image from "next/image";
-import { Github, Linkedin } from "lucide-react";
+import { Github, GithubIcon, Linkedin, LinkedinIcon } from "lucide-react";
 import { AnimatePresence } from "framer-motion";
 import { motion } from "framer-motion";
 const Heading = () => {
   return (
     <div className="flex max:flex-row flex-col gap-5 mt-[74px] max:items-center">
       <div className="flex-[0.6] space-y-[30px] max-w-[708px]">
-        <div className="-space-y-[5px]">
-          <div className="flex flex-col gap-0">
-            <h2 className="text-[19px]">Hi I'm Jonathan Trevino!</h2>
-            <h1 className="text-[39px] font-medium mt-[5px]">
-              I specialize in web development,
-            </h1>
-          </div>
-          <p className="mt-[8px] text-[19px]">
-            where I leverage technologies to create powerful digital solutions.
+        <div className="">
+          <h1 className="text-[39px] font-semibold">Jonathan Trevino</h1>
+          <p className="mt-[2px] text-[27px] font-medium">
+            Software Engineer in Web Development
+          </p>
+
+          <p className="mt-[8px] text-[19px] text-gray-700">
+            I have a Bachelor's in Computer Science from{" "}
+            <a className="custom text-[color:#f15a22]">UTSA</a>, and over 2
+            years of experience developing websites using modern technologies.
           </p>
         </div>
         <div className="w-fit">
-          <div className="flex gap-3 mt-3">
+          <div className="flex gap-2">
             <a
-              href="https://www.linkedin.com/in/jonathan-trevino/"
+              href="https://linkedin.com/in/jonathan-trevino"
               target="_blank"
-              className="btn btn-primary btn-sm"
+              className="text-gray-500"
             >
-              <Linkedin size={20} />
-              LinkedIn
+              <LinkedinIcon />
             </a>
             <a
-              href="https://www.github.com/yeahimjt"
+              href="https://github.com/jonathan-trevino/"
               target="_blank"
-              className="btn btn-neutral btn-sm"
+              className="text-gray-500"
             >
-              <Github size={20} />
-              GitHub
+              <GithubIcon />
             </a>
           </div>
         </div>

@@ -40,9 +40,9 @@ export type ProjectType = {
 
 export const samples: SampleProject[] = [
   {
-    title: "Linkfolio",
+    title: "webportfolios.dev",
     description:
-      "Platform for users seeking design inspiration for their personal web portfolios.",
+      "Platform for users to upload and browse portfolios made by developers.",
     skills: [
       "Next.js",
       "React.js",

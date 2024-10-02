@@ -51,8 +51,8 @@ export const samples: SampleProject[] = [
       "Puppeteer",
       "AWS - Lambda",
     ],
-    img_url: "linkfolio.png",
-    url: "linkfolio",
+    img_url: "webportfolios.png",
+    url: "webportfolios.dev",
     index: 0,
   },
   {
@@ -75,9 +75,9 @@ export const samples: SampleProject[] = [
 
 export const projects: ProjectType[] = [
   {
-    title: "Linkfolio",
+    title: "webportfolios.dev",
     description:
-      "Platform for users seeking design inspiration for ttheir personal web portfolios",
+      "Platform for users to upload and browse portfolios made by developers.",
     skills: [
       "Next.js",
       "React.js",
@@ -86,18 +86,18 @@ export const projects: ProjectType[] = [
       "Puppeteer",
       "AWS - Lambda",
     ],
-    img_url: "/linkfolio.png",
-    url: null,
+    img_url: "/webportfolios.png",
+    url: "https://www.webportfolios.dev",
     index: 0,
-    github_url: "https://github.com/jonathan-trevino/linkfolio",
+    github_url: "https://github.com/jonathan-trevino/webportfolios.dev",
     overview:
-      "Resources for building a personal web portfolio are scarce. Often times google searches will recommend you the same few portfolios that are notable in their respective fields. Linkfolio is here to bring real-world portfolios to users.",
+      "I found that finding inspiration for my own web portfolio was difficult. It often led me to seeing the same popular portfolios repeatedly. It was obvious to me an application like webportfolios.dev was needed.",
     features:
-      "Linkfolio utilizes Firebase for its authentication, database for data, and storage for storing the images of users portfolio website. Users can upload their portfolio by entering their portfolio url where Linkfolio will then utilize Puppeteer to take screenshots conditionally based on the height of their portfolio.Infinite scrolling exists for exploring posts to feed users data incrementally for optimization.",
+      "Uploading a portfolio to the webiste will trigger a AWS Lambda function that will navigate to the given URL incrementally screenshotting the website as it scrolls down. This allows users to seamlessly post their portfolio on the webiste. Authentication and the database is handled by Firebase",
     challenges:
-      "The project had no notable challenges. Before developing any of Linkfolios pages or functionality, I had already designed and mapped out needed functionality. This allowed me to have a solid foundation for how my website would look, and how it would ultimately flow for users.",
+      "I found configuring my Lambda function script with chromium that is necessary for puppeteer was challenging and the resources available were scarce. Through rigorous testing I was able to properly configure Lambda.",
     results:
-      "What I was left with at the end of development was a production ready platform for users to utilize. As of right now I am pushing this platform via Linkedin, and various other social media platforms; targeting specific users who meet the need-case for the application to grow its community.",
+      "What I was left with at the end of development was a production ready platform for users to utilize. As of right now I am pushing this platform via Linkedin, and various other social media platforms; targeting specific users who meet the need-case for the application to grow its community before implementing further features.",
   },
   {
     title: "Clinkz",

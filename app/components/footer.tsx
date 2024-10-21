@@ -115,7 +115,7 @@ const Footer = () => {
               <LinkedinIcon />
             </a>
             <a
-              href="https://github.com/jonathan-trevino/"
+              href="https://github.com/jonathantrevino/"
               target="_blank"
               className="text-gray-500"
             >

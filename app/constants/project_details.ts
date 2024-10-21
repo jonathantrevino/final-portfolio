@@ -89,7 +89,7 @@ export const projects: ProjectType[] = [
     img_url: "/webportfolios.png",
     url: "https://www.webportfolios.dev",
     index: 0,
-    github_url: "https://github.com/jonathan-trevino/webportfolios.dev",
+    github_url: "https://github.com/jonathantrevino/webportfolios.dev",
     overview:
       "I found that finding inspiration for my own web portfolio was difficult. It often led me to seeing the same popular portfolios repeatedly. It was obvious to me an application like webportfolios.dev was needed.",
     features:
@@ -114,7 +114,7 @@ export const projects: ProjectType[] = [
     img_url: "/clinkz.png",
     url: "https://clinkz.vercel.app/",
     index: 0,
-    github_url: "https://github.com/jonathan-trevino/clinkz",
+    github_url: "https://github.com/jonathantrevino/clinkz",
     overview:
       "Typically when researching into purchasing products, I often try my best to buy when the items price is at a discount. Unfortunately at the time there was no method of tracking its price without manually checking amazon product pages. This is where Clinkz was conceptualized, allowing users to enter amazon product URLs to have Clinkz track and notify products for them.",
     features:

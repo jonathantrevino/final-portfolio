@@ -27,7 +27,7 @@ export type SampleProject = {
 export type ProjectType = {
   title: string;
   description: string;
-  skills: string[];
+  skills: { image_url: string, title: string }[];
   img_url: string;
   url: string | null;
   index: number;
@@ -90,15 +90,19 @@ export const samples: SampleProject[] = [
 
       },
       {
-        image_url: 'firebase.svg',
-        title: "Firebase",
+        image_url: 'tailwind.svg',
+        title: "Tailwind",
 
       },
       {
-        image_url: 'aws.svg',
-        title: "AWS",
+        image_url: 'zustand.svg',
+        title: "Zustand",
 
       },
+      {
+        image_url: 'nextauth.svg',
+        title: 'NextAuth'
+      }
     ],
     img_url: "clinkz.png",
     url: "clinkz",
@@ -112,12 +116,31 @@ export const projects: ProjectType[] = [
     description:
       "Platform for users to upload and browse portfolios made by developers.",
     skills: [
-      "Next.js",
-      "React.js",
-      "Tailwind",
-      "Firebase",
-      "Puppeteer",
-      "AWS - Lambda",
+      {
+        image_url: 'next.svg',
+        title: "Next.js",
+
+      },
+      {
+        image_url: 'react.svg',
+        title: "React.js",
+
+      },
+      {
+        image_url: 'tailwind.svg',
+        title: "Tailwind",
+
+      },
+      {
+        image_url: 'firebase.svg',
+        title: "Firebase",
+
+      },
+      {
+        image_url: 'aws.svg',
+        title: "AWS",
+
+      },
     ],
     img_url: "/webportfolios.png",
     url: "https://www.webportfolios.dev",
@@ -137,12 +160,30 @@ export const projects: ProjectType[] = [
     description:
       "Subscription-based service that allows users to enter Amazon product URLs to have them actively scraped for better prices, receiving notifications when price is low.",
     skills: [
-      "Next.js",
-      "React.js",
-      "Tailwind",
-      "Zustand",
-      "Shadcnui",
-      "NextAuth",
+      {
+        image_url: 'next.svg',
+        title: "Next.js",
+
+      },
+      {
+        image_url: 'react.svg',
+        title: "React.js",
+
+      },
+      {
+        image_url: 'tailwind.svg',
+        title: "Tailwind",
+
+      },
+      {
+        image_url: 'zustand.svg',
+        title: "Zustand",
+
+      },
+      {
+        image_url: 'nextauth.svg',
+        title: 'NextAuth'
+      }
     ],
     img_url: "/clinkz.png",
     url: "https://clinkz.vercel.app/",

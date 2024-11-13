@@ -1,10 +1,12 @@
 import Image from 'next/image'
 import React from 'react'
 
-const SkillBadge = ({ image_url, title }: { image_url: string, title: string }) => {
+const SkillBadge = ({ image_url, title }: { image_url: string | null, title: string }) => {
   return (
     <span className='badge items-center self-center badge-lg !rounded-md badge-neutral !py-2 infline-flex  gap-2'>
-      <Image className='rounded-full' src={image_url} width={20} height={20} alt={`${title} logo`} />
+      {image_url &&
+        <Image className='rounded-full' src={image_url} width={20} height={20} alt={`${title} logo`} />
+      }
       {title}
     </span>
   )

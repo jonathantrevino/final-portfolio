@@ -9,6 +9,7 @@ import { ExternalLink, Code, MoveLeft } from "lucide-react";
 import Image from "next/image";
 import Project from "@/app/components/project/project";
 import Link from "next/link";
+import SkillBadge from "@/app/components/skillBadge";
 
 type Params = {
   params: {
@@ -44,6 +45,7 @@ export default function Page({ params: { id } }: Params) {
   );
 
   console.log(extraProjectData);
+  console.log(projectData)
 
   if (!projectData)
     return (
@@ -68,12 +70,7 @@ export default function Page({ params: { id } }: Params) {
             </div>
             <div className="flex flex-wrap gap-2 min-h-[44px]">
               {projectData.skills.map((skill, index) => (
-                <div
-                  key={index}
-                  className="bg-neutral text-neutral-content px-2 text-[12px] h-fit"
-                >
-                  {skill}
-                </div>
+                <SkillBadge key={index} image_url={null} title={skill.title} />
               ))}
             </div>
             <div className="flex gap-3">
@@ -129,26 +126,26 @@ export default function Page({ params: { id } }: Params) {
         <div className="grid grid-cols-1 lg:grid-cols-2  mt-[20px] gap-5">
           {Array.isArray(extraProjectData)
             ? extraProjectData.map((sample, index) => (
-                <Project
-                  key={index}
-                  title={sample.title}
-                  description={sample.description}
-                  skills={sample.skills}
-                  img_url={sample.img_url}
-                  url={sample.url}
-                  index={sample.index}
-                />
-              ))
+              <Project
+                key={index}
+                title={sample.title}
+                description={sample.description}
+                skills={sample.skills}
+                img_url={sample.img_url}
+                url={sample.url}
+                index={sample.index}
+              />
+            ))
             : extraProjectData && (
-                <Project
-                  title={extraProjectData.title}
-                  description={extraProjectData.description}
-                  skills={extraProjectData.skills}
-                  img_url={extraProjectData.img_url}
-                  url={extraProjectData.url}
-                  index={extraProjectData.index}
-                />
-              )}
+              <Project
+                title={extraProjectData.title}
+                description={extraProjectData.description}
+                skills={extraProjectData.skills}
+                img_url={extraProjectData.img_url}
+                url={extraProjectData.url}
+                index={extraProjectData.index}
+              />
+            )}
         </div>
       </div>
     </>

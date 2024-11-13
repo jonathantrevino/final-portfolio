@@ -39,7 +39,7 @@ const Project = ({
         </span>
         <div className="flex flex-wrap gap-2 min-h-[44px]">
           {skills.map((skill, index) => (
-            <SkillBadge key={index} image_url={skill.image_url} title={skill.title} />
+            <SkillBadge key={index} image_url={null} title={skill.title} />
           ))}
         </div>
       </div>

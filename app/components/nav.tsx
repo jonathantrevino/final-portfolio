@@ -132,7 +132,7 @@ const Nav = () => {
               className="group-hover:-translate-y-[2px] transition-all ease-in-out"
               size={20}
             />
-            Skills
+            Education
           </Link>
           <Link href="/#certifications" className="flex gap-2 group">
             <Award

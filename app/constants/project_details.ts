@@ -31,7 +31,7 @@ export type ProjectType = {
   img_url: string;
   url: string | null;
   index: number;
-  github_url: string;
+  github_url: string | null;
   overview: string;
   features: string;
   challenges: string;
@@ -145,7 +145,7 @@ export const projects: ProjectType[] = [
     img_url: "/webportfolios.png",
     url: "https://www.webportfolios.dev",
     index: 0,
-    github_url: "https://github.com/jonathantrevino/webportfolios.dev",
+    github_url: null,
     overview:
       "I found that finding inspiration for my own web portfolio was difficult. It often led me to seeing the same popular portfolios repeatedly. It was obvious to me an application like webportfolios.dev was needed.",
     features:

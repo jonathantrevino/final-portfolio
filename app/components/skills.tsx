@@ -15,15 +15,15 @@ const Skills = () => {
             initial={{ scale: 0.8 }}
             whileInView={{ scale: 1, opacity: 1 }}
             transition={{ delay: 0.1 * (index * 0.2), duration: 0.2 }}
-            className="sm:w-full sm:h-full w-[100px] h-[100px] aspect-square group relative bg-base-200 hover:scale-105 transition-all"
+            className="sm:w-full sm:h-full w-[100px] h-[100px] aspect-square group relative bg-base-200 hover:scale-[1.05] transition-all"
           >
             <Image
-              className="rounded-md transition-all ease-in-out group-hover:scale-125 group-hover:z-10"
+              className="rounded-md transition-all ease-in-out group-hover:scale-[1.05] group-hover:z-10"
               src={skill.url}
               alt={skill.title}
               fill
             />
-            <div className="group-hover:scale-100 scale-50 group-hover:opacity-100 group-hover:bg-base-100 rounded-md px-2 opacity-0 absolute bottom-2 -right-1 block shadow-lg border border-base-300 group-hover:z-20 text-sm transition-all">
+            <div className="group-hover:scale-100 scale-50 group-hover:opacity-100 group-hover:bg-base-100 rounded-md px-2 opacity-0 absolute bottom-2 right-2 block shadow-lg border border-base-300 group-hover:z-20 sm:text-sm md:text-xs lg:text-sm transition-all">
               {skill.title}
             </div>
           </motion.div>

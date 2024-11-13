@@ -18,7 +18,7 @@ export const skills_images = [
 export type SampleProject = {
   title: string;
   description: string;
-  skills: string[];
+  skills: { image_url: string, title: string }[];
   img_url: string;
   url: string;
   index: number;
@@ -42,14 +42,33 @@ export const samples: SampleProject[] = [
   {
     title: "webportfolios.dev",
     description:
-      "Platform for users to upload and browse portfolios made by developers.",
+      "All-in-one platform for developer porfolios, browse portfolios uploaded by real developers and read guides to overcome any obstacles.",
     skills: [
-      "Next.js",
-      "React.js",
-      "Tailwind",
-      "Firebase",
-      "Puppeteer",
-      "AWS - Lambda",
+      {
+        image_url: 'next.svg',
+        title: "Next.js",
+
+      },
+      {
+        image_url: 'react.svg',
+        title: "React.js",
+
+      },
+      {
+        image_url: 'tailwind.svg',
+        title: "Tailwind",
+
+      },
+      {
+        image_url: 'firebase.svg',
+        title: "Firebase",
+
+      },
+      {
+        image_url: 'aws.svg',
+        title: "AWS",
+
+      },
     ],
     img_url: "webportfolios.png",
     url: "webportfolios.dev",
@@ -60,12 +79,26 @@ export const samples: SampleProject[] = [
     description:
       "Subscription-based service that allows users to enter Amazon product URLs to have them actively scraped for better prices, recieving notifications when prices are low.",
     skills: [
-      "Next.js",
-      "React.js",
-      "Tailwind",
-      "Zustand",
-      "Shadcnui",
-      "NextAuth",
+      {
+        image_url: 'next.svg',
+        title: "Next.js",
+
+      },
+      {
+        image_url: 'react.svg',
+        title: "React.js",
+
+      },
+      {
+        image_url: 'firebase.svg',
+        title: "Firebase",
+
+      },
+      {
+        image_url: 'aws.svg',
+        title: "AWS",
+
+      },
     ],
     img_url: "clinkz.png",
     url: "clinkz",

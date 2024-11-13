@@ -4,6 +4,7 @@ import {
   GithubIcon,
   LinkedinIcon,
   MoveRight,
+  TwitterIcon,
 } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
@@ -107,6 +108,13 @@ const Footer = () => {
             hello@jonathantrevino.com
           </button>
           <div className="flex gap-2">
+            <a
+              href="https://www.x.com/jtrevdev"
+              target="_blank"
+              className="text-gray-500 hover:text-black"
+            >
+              <TwitterIcon />
+            </a>
             <a
               href="https://linkedin.com/in/jonathan-trevino"
               target="_blank"

@@ -12,7 +12,7 @@ const Heading = () => {
       <div className="flex-[0.6] max-w-[708px]">
         <h1 className="text-[39px] font-semibold">Jonathan Trevino</h1>
         <p className="mb-[8px] text-[27px] font-medium">
-          Software Engineer in Web Development
+          Software Engineer specializing in Web Development
         </p>
         <p className="mt-[24px] text-[19px] text-gray-700 leading-loose">
           I have a Bachelor's in Computer Science from{" "}
